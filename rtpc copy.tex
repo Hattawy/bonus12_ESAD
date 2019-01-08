@@ -1,0 +1,182 @@
+\section{Radial Time Projection Chamber}
+
+\subsection{Overview}
+The CLAS12 Radial Time Projection Chamber is a composed of two parts. The main one is a cylindrical gaseous detector which uses two different gas mixtures. The second part is a small detector called Drift Monitoring System (DMS). With respect to hazards there is no difference between the RTPC and the DMS as they use the same gases.
+The material in this chapter is a subset of the material in the full CLAS12 Radial Time Projection Chamber operations manual and is only intended to familiarize people with the hazards and responsible personnel for these systems. In no way it should be taken as sufficient information to use or operate this equipment.
+
+\subsection{RTPC Construction}
+The RTPC is composed of two 40 cm long concentric cylinders whose longitudinal axis is the beam line. The first cylinder between the target wall (R=6mm) and the ground foil (R=20 mm) is filled with pure Helium. The second cylinder starts right after the ground foil and finishes at a radius of 79 mm by the readout pad board. The gas that will be used for this second space is a mixture of 80\% of Helium and 20\% of carbon dioxide. As no flammable gas is used, the apparatus is of a class-0 gaseous device. 
+
+Three groups of elements of the detector are energized electrically:
+\begin{itemize}
+\item the cathode foil
+\item 3 Gas Electron Multiplier (GEM) foils are used to amplify the signal
+\item the two end caps of the cylinder are electrified via voltage dividers to ensure the electric field uniformity inside the detector
+\end{itemize}
+
+In total the RTPC is powered by 7 high voltage channels up to 7000V, even though the current limit for both HV is extremely low. One high voltage channel is used for the cathode foil and the 6 others are connected to the GEM foils. The end caps are powered via the inner most GEM foil and the cathode. The detectors are read through 1.5m-long flex cables by Front-End Units (FEU). These electronic cards contain the customized DREAM ASICs in order to sample the detector signal and a Flash-ADC to digitize it and send it to the network. The FEUs are placed inside customized crates, on the back of the support tube holding the RTPC. They are powered through low voltage, and kept within the 40-60$^\circ$C temperature range using a simple set of fans and tubing.
+
+
+%NEEDS TO BE MODIFIED ACCORDING TO WHETHER OR NOT WE USE FMT
+%
+%The CLAS12 Micromegas Vertex Tracker apparatus is comprised of the Barrel Micromegas 
+%Tracker (BMT) and the Forward Micromegas Tracker (FMT), which despite their different 
+%shapes (cylinders or disks), are the same type of detector and therefore have the same 
+%list of hazards. Both subsystems are gaseous detectors, the only difference with respect 
+%to the hazards is the use of different gases for the BMT and the FMT.
+%
+%The BMT is composed of 3 double-layers of resistive cylindrical Micromegas detectors, each 
+%layer is divided into 3 sectors, for a total of 18 detectors. In combination with the 
+%Silicon Vertex Tracker, the BMT covers the polar angle region from 35$^\circ$ to 125$^\circ$ 
+%around the target. Micromegas detectors are double-stage gaseous detectors. The gas that will 
+%be used for the BMT is a mixture of 90\% argon and 10\% isobutane. Even though isobutane 
+%is a flammable gas, the amount of gas in use at any given time is well within the range of a 
+%class-0 gaseous device.
+%
+%The BMT is powered by two high voltages up to 2000~V, although the current limit for both 
+%HV is extremely low. The detectors are read out through 1.5-m-long flex cables by Front-End 
+%Units (FEU). These electronic cards contain the customized DREAM ASICs in order to sample the 
+%detector signal and a flash-ADC to digitize it and send it to the network. The FEUs are placed 
+%inside customized crates, on the back of the support tube holding the MVT. They are powered 
+%through low voltage, and kept within the 40$^\circ$C to 60$^\circ$C temperature range using a 
+%simple set of fans and tubing.
+%
+%The FMT is composed of 6 flat resistive Micromegas detectors. Each detector is divided in two 
+%zones (inner and outer). The FMT covers the polar angle region from 6$^\circ$ to 29$^\circ$ 
+%from the target. Micromegas detectors are double-stage gaseous detectors. The gas that will be 
+%used for the BMT is a mixture of 80\% Argon, 10\% CF$_4$, and 10\% isobutane. Even though 
+%isobutane is a flammable gas, the amount of gas in use at any given time is well within the 
+%range of a class-0 gaseous device.
+%
+%The FMT is powered by three high voltages up to 2000~V, although the current limit for all 
+%three HV is extremely low ($<$1~mA). The detectors are read out through 2.2-m-long flex cables 
+%by Front-End Units (FEU). These electronic cards contain the customized DREAM ASICs in order to 
+%sample the detector signal and a flash-ADC to digitize it and send it to the network. The FEUs 
+%are placed inside customized crates, located on the back of the support tube holding the MVT. 
+%They are powered through low voltage, and kept within the 40$^\circ$C to 60$^\circ$C temperature 
+%range using a simple set of fans and tubing.
+%
+%All hazards and mitigation options for the FMT are the same as for the BMT. Even though the 
+%shapes of the detectors vary, they are almost identical in principle. The gas mixture is 
+%however different, but the amount of flammable gas (isobutane) is almost the same.
+
+\subsection{Hazards} 
+
+Hazards to personnel include the use of high voltage and the low voltage which powers the readout electronics. During the installation phase, mechanical hazards include the risks associated with the weight of the RTPC including its support tube as well as the work at height in order to access LV and gas control crates.
+
+Hazards to the RTPC detectors themselves include mechanical damage, gas leaks and gas over-pressure. Hazards to the RTPC and personnel may arise from the presence of high magnetic field near the detectors.
+
+Hazards concerning the RTPC Front-End Units include: wrong LV settings that could damage the FEUs, absence of cooling or cooling failure which would overheat the cards.
+
+%Hazards to personnel include the use of flammable gas, high voltage, and the low voltage that 
+%powers the readout electronics. During the installation phase, mechanical hazards include the 
+%risks associated with the weight of the MVT, including its support tube, as well as the work at 
+%height in order to access the LV and gas control crates.
+%
+%Hazards to the MVT detectors themselves include mechanical damage, gas leaks, and gas 
+%over-pressure. Also, there is a risk of damage to the MVT during installation in the solenoid 
+%bore.
+%
+%Hazards concerning the MVT Front-End Units include: wrong LV settings that could damage the FEUs, 
+%and absence of cooling or cooling failure that would overheat the cards.
+
+\subsection{Mitigations}
+
+Electrical hazards (personnel):
+
+\begin{enumerate}
+\item High Voltage: high voltage up to 4000V are used routinely for all detectors. Mitigation: very low current limit (10mA) is set. All mechanical structures are properly grounded.
+\item Low Voltage: In order to power up the front end electronics, we use low voltage at 4.5V with 60A per crate. Mitigation: voltage is low enough not to be a danger to personnel. All mechanical structures are properly grounded. All cables and connectors are certified for this rating and shielded.
+\end{enumerate}
+
+Mechanical hazards (personnel):
+\begin{enumerate}
+\item	Work at height for access to gas control and LV crate (located at 2.5m height) on the moving cart. Mitigation: use of certified step ladder provided by JLab.
+\end{enumerate}
+
+
+Radioactive hazards:
+\begin{enumerate}
+\item Two 90Sr radioactive sources are sealed in the detector. Mitigation: they can not be removed from it without dismounting the whole detector. The shielding around the detector is sufficient for the detector to be handled as a standard detector. The activity of the sources will be below a few tens of ?Ci. A sign on the detector indicates not to open the detector as two radioactive sources are inside. The type or source and activities of the two sources are also indicated on this sign.
+\end{enumerate}
+
+
+Other hazards to DMS:
+\begin{enumerate}
+\item Detectors: gas over-pressure, gas leaks, mechanical damage. Mitigation: gas control system with over-pressure and leak limits. 
+\item Electronics: wrong LV settings, absence of cooling or cooling failure. Mitigation: Slow control read-back of LV setting before turning on the Front-End electronics. Cooling is also checked by slow-control, and is interlocked so that the electronics cannot be turned on when the cooling is off. Also, temperature sensors are present on the Front End cards and are directly interlocked so that if temperature goes beyond a predefined threshold, cards are gracefully shut-down automatically.
+\item High Magnetic Fields: A hazard for personnel and equipment may arise if maintenance operations are performed while magnets are energized. Mitigation: The detector area is not accessible during regular CLAS12 operation; accessing the detector area implies the displacement of the moving cart that requires the solenoid magnet to be turned off. Energized magnets are noted by red flashing beacons.
+\item,The source is collimated, shielding has been added to ensure that no external radiation is expected when touching the detector.
+\end{enumerate}
+
+
+
+%Fire hazards (equipment and personnel):
+%\begin{itemize}
+%\item Use of flammable gas: All MVT detectors use 10\% isobutane, which is flammable. Mitigation: 
+%the amount of isobutane in our system is very limited. For both the BMT and FMT detectors, the 
+%total combustion energy is equivalent to less than 12~g of hydrogen, which makes it a class-0 
+%gas system (class-1 starts at 600~g).
+%\end{itemize}
+%
+%Electrical hazards (personnel):
+%\begin{itemize}
+%\item High Voltage: high voltage up to 2500~V are used routinely for all detectors. Mitigation: 
+%very low current limit (10~$\mu$A) is set. All mechanical structures are properly grounded.
+%\item Low Voltage: In order to power up the front-end electronics, we use low voltage at 4.5~V 
+%with 60~A per crate. Mitigation: voltage is low enough not to be a danger to personnel. All 
+%mechanical structures are properly grounded. All cables and connectors are certified for this 
+%rating and shielded.
+%\end{itemize}
+%
+%Mechanical hazards (personnel):
+%\begin{itemize}
+%\item Heavy object (Total: 200~kg), handled with an overhead crane. Mitigation: job done by 
+%trained JLab staff according to and compliant with the Jefferson Lab EHS\&Q manual.
+%\item Work at height for access to gas control and LV crate (located at 2.5~m height) on the 
+%moving cart. Mitigation: use of certified step ladder provided by JLab.
+%\end{itemize}
+%
+%Other hazards to MVT:
+%\begin{itemize}
+%\item Detectors: gas over-pressure, gas leaks, and mechanical damage. Mitigation: gas control 
+%system with over-pressure and leak limits. Protection covers (1~mm carbon shell) in order to 
+%avoid as much as possible damage to the detectors before installation and operation. The FMT 
+%detectors can be dismounted and repaired in case of accidental damage to the drift electrode. 
+%Since they are tightly stacked, only one such electrode is exposed and at risk, the rest of 
+%the stack is protected by the first detector.
+%\item Installation of Central Tracker: Damage to the MVT during installation in the solenoid 
+%bore. The CTOF is the closest detector to MVT. Mitigation: Parts of the MVT that are radially 
+%farthest outwards are surveyed prior to insertion into the solenoid to ensure that there is 
+%no interference with adjacent CTOF components. There is a large clearance ($\sim$11~mm) between 
+%the MVT and the adjacent detector, CTOF. The insertion will be achieved on a precision rail 
+%system that is used for the target insertion. There will be a constant visual check as the MVT 
+%is inserted into the solenoid bore. A linkage mechanism on the upstream end of the SVT/MVT allows 
+%for the adjustments in pitch and yaw if needed. Finally, the operation will be performed by 
+%trained personnel with several years of experience and familiar with similar positioning.
+%\item Electronics: wrong LV settings and absence of cooling or cooling failure. Mitigation: Slow 
+%Controls read-back of LV settings before turning on the front-end electronics. Cooling is also 
+%checked by the Slow Controls system, and is interlocked so that the electronics cannot be turned 
+%on when the cooling is off. Also, temperature sensors are present on the front-end cards and are 
+%directly interlocked so that if temperature goes beyond a predefined threshold, the cards are 
+%gracefully shut-down automatically.
+%\end{itemize}
+
+\subsection{Responsible Personnel}
+
+Individuals responsible for the MVT system are:
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|c|c|c|c|c|} \hline
+Name&Dept.&Phone&email&Comments \\ \hline
+Expert on call&Hall-B &(757) 541-7539&& 1st contact \\ \hline
+M. Hattawy &ODU&+1 (423) 596-8352&\href{mailto:mohammad.hattawy@gmail.com}{\nolinkurl{mohammad.hattawy@gmail.com}}&2nd contact \\ \hline
+S. Kuhn&ODU&+1 (757) 639-6640&\href{mailto:kuhn@jlab.org{\nolinkurl{kuhn@jlab.org}}&3rd contact \\ \hline
+S. B\"ultmann&SODU&???&\href{mailto:sbueltma@odu.edu}{\nolinkurl{sbueltma@odu.edu}}&4th contact \\ \hline
+E. Christy&SHampton U.&???&\href{mailto:christy@jlab.org}{\nolinkurl{christy@jlab.org}}&4th contact \\ \hline
+\end{tabular}
+\caption{Personnel responsible for the CLAS12 MVT system.} 
+\label{tb:mm}
+\end{table}
+

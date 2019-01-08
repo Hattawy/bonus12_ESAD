@@ -1,0 +1,73 @@
+\section{Radial Time Projection Chamber}
+
+\subsection{Overview}
+The CLAS12 Radial Time Projection Chamber is a composed of two parts. The main one is a cylindrical gaseous detector which uses two different gas mixtures. The second part is a small detector called Drift Monitoring System (DMS). With respect to hazards there is no difference between the RTPC and the DMS as they use the same gases.
+The material in this chapter is a subset of the material in the full CLAS12 Radial Time Projection Chamber operations manual and is only intended to familiarize people with the hazards and responsible personnel for these systems. In no way it should be taken as sufficient information to use or operate this equipment.
+
+\subsection{RTPC Construction}
+The RTPC is composed of two 40 cm long concentric cylinders whose longitudinal axis is the beam line. The first cylinder between the target wall (R=6mm) and the ground foil (R=20 mm) is filled with pure Helium. The second cylinder starts right after the ground foil and finishes at a radius of 79 mm by the readout pad board. The gas that will be used for this second space is a mixture of 80\% of Helium and 20\% of carbon dioxide. As no flammable gas is used, the apparatus is of a class-0 gaseous device. 
+
+Three groups of elements of the detector are energized electrically:
+\begin{itemize}
+\item the cathode foil
+\item 3 Gas Electron Multiplier (GEM) foils are used to amplify the signal
+\item the two end caps of the cylinder are electrified via voltage dividers to ensure the electric field uniformity inside the detector
+\end{itemize}
+
+In total the RTPC is powered by 7 high voltage channels up to 7000V, even though the current limit for both HV is extremely low. One high voltage channel is used for the cathode foil and the 6 others are connected to the GEM foils. The end caps are powered via the inner most GEM foil and the cathode. The detectors are read through 1.5m-long flex cables by Front-End Units (FEU). These electronic cards contain the customized DREAM ASICs in order to sample the detector signal and a Flash-ADC to digitize it and send it to the network. The FEUs are placed inside customized crates, on the back of the support tube holding the RTPC. They are powered through low voltage, and kept within the 40-60$^\circ$C temperature range using a simple set of fans and tubing.
+
+\subsection{Hazards} 
+
+Hazards to personnel include the use of high voltage and the low voltage which powers the readout electronics. During the installation phase, mechanical hazards include the risks associated with the weight of the RTPC including its support tube as well as the work at height in order to access LV and gas control crates.
+
+Hazards to the RTPC detectors themselves include mechanical damage, gas leaks and gas over-pressure. Hazards to the RTPC and personnel may arise from the presence of high magnetic field near the detectors.
+
+Hazards concerning the RTPC Front-End Units include: wrong LV settings that could damage the FEUs, absence of cooling or cooling failure which would overheat the cards.
+
+\subsection{Mitigations}
+
+Electrical hazards (personnel):
+
+\begin{enumerate}
+\item High Voltage: high voltage up to 4000V are used routinely for all detectors. Mitigation: very low current limit (10mA) is set. All mechanical structures are properly grounded.
+\item Low Voltage: In order to power up the front end electronics, we use low voltage at 4.5V with 60A per crate. Mitigation: voltage is low enough not to be a danger to personnel. All mechanical structures are properly grounded. All cables and connectors are certified for this rating and shielded.
+\end{enumerate}
+
+Mechanical hazards (personnel):
+\begin{enumerate}
+\item	Work at height for access to gas control and LV crate (located at 2.5m height) on the moving cart. Mitigation: use of certified step ladder provided by JLab.
+\end{enumerate}
+
+
+Radioactive hazards:
+\begin{enumerate}
+\item Two $^{90}$Sr radioactive sources are sealed in the detector. Mitigation: they can not be removed from it without dismounting the whole detector. The shielding around the detector is sufficient for the detector to be handled as a standard detector. The activity of the sources will be below a few tens of $\mu$Ci. A sign on the detector indicates not to open the detector as two radioactive sources are inside. The type or source and activities of the two sources are also indicated on this sign.
+\end{enumerate}
+
+
+Other hazards to DMS:
+\begin{enumerate}
+\item Detectors: gas over-pressure, gas leaks, mechanical damage. Mitigation: gas control system with over-pressure and leak limits. 
+\item Electronics: wrong LV settings, absence of cooling or cooling failure. Mitigation: Slow control read-back of LV setting before turning on the Front-End electronics. Cooling is also checked by slow-control, and is interlocked so that the electronics cannot be turned on when the cooling is off. Also, temperature sensors are present on the Front End cards and are directly interlocked so that if temperature goes beyond a predefined threshold, cards are gracefully shut-down automatically.
+\item High Magnetic Fields: A hazard for personnel and equipment may arise if maintenance operations are performed while magnets are energized. Mitigation: The detector area is not accessible during regular CLAS12 operation; accessing the detector area implies the displacement of the moving cart that requires the solenoid magnet to be turned off. Energized magnets are noted by red flashing beacons.
+\item The source is collimated, shielding has been added to ensure that no external radiation is expected when touching the detector.
+\end{enumerate}
+
+\subsection{Responsible Personnel}
+
+Individuals responsible for the RTPC system are:
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|c|c|c|c|c|} \hline
+Name&Dept.&Phone&email&Comments \\ \hline
+Expert on call&Hall-B &(757) 541-7539&& 1st contact \\ \hline
+M. Hattawy &ODU&+1 (423) 596-8352&\href{mailto:hattawy@jlab.org}{\nolinkurl{hattawy@jlab.org}}&2nd contact \\ \hline
+S. Kuhn&ODU&+1 (757) 639-6640&\href{mailto:kuhn@jlab.org}{\nolinkurl{kuhn@jlab.org}}&3rd contact \\ \hline
+S. B\"ultmann&ODU&???&\href{mailto:sbueltma@odu.edu}{\nolinkurl{sbueltma@odu.edu}}&4th contact \\ \hline
+E. Christy&Hampton U.&???&\href{mailto:christy@jlab.org}{\nolinkurl{christy@jlab.org}}&5th contact \\ \hline
+\end{tabular}
+\caption{Personnel responsible for the CLAS12 RTPC system.} 
+\label{tb:rtpc}
+\end{table}
+
