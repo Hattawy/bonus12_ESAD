@@ -1,0 +1,6 @@
+#! /bin/bash
+pdflatex -shell-escape ESAD_HallB-CLAS12_rgF.tex
+pdflatex -shell-escape ESAD_HallB-CLAS12_rgF.tex
+pdflatex -shell-escape ESAD_HallB-CLAS12_rgF.tex
+rm -f *.mtc1 *.aux *.lof *.log *.out *.lot *.toc *.brf *.maf *.mtc *.mtc0 *.nlo *.bbl *.blg
+
